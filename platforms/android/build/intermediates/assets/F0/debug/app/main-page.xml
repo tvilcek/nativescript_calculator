@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <StackLayout>
+
+<TextField hint="Unesite prvi broj" keyboardType="number" autocorrect="false" text="{{ num1 }}" />
+<TextField hint="Unesite drugi broj" keyboardType="number" autocorrect="false" text="{{ num2 }}"/>
+
+
+<Button text="Izračunaj" tap="{{ zbroji }}"/>
+
+<HtmlView html="Zbroj:" class="message" />
+
+<Label text="{{ zbroj }}" class="message" textWrap="true" id="suma" />
+
+
+  </StackLayout>
+</Page>
